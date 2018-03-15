@@ -1,0 +1,277 @@
+#include <conio.h>
+#include <stdio.h>
+#include <iostream.h>
+int main() {
+    struct
+   {
+   char kobar, nabar[20];
+   int harga,jumlh,total,bayar,kembali;
+   }brng;
+
+   char awal, ulang;
+
+   awal:
+   clrscr();
+   puts("==============================================");
+   puts("=            GALAXY ARMY STORE               =");
+   puts("==============================================");
+   puts("[1] input Makanan");
+   puts("[2] input Barang");
+   puts("[3] input Minuman");
+   puts("[4] exit");                                  
+   cout<<"Pilih kode menu [1/2/3/4] : ";cin>>awal;
+
+   if (awal=='1')
+       goto satu;
+    else
+    if (awal=='2')
+        goto dua;
+    else if (awal=='3')
+        goto tiga;
+    else
+      goto empat;
+
+      satu:
+      clrscr();
+      puts("==============================================================================");
+      puts("               >DAFTAR MENU GALAXY ARMY STORE<    ");
+      puts("             Jln. S.parman no: 23 (belakang asli motor)");
+      puts("               kasir : Nandar Pakyu             hp: 085747788024   ");
+      puts("==============================================================================");
+      puts("[A] Nasi Kucing");
+      puts("[B] Mendoan anget");
+      puts("[C] Kopi ABC susu");
+      puts("[D] udut jarum 12");
+      puts("[E] Jahe susu");
+      puts("[F] usus ayam");
+      puts("[G] Ndas ayam");
+      puts("[H] kopi hitam");
+      puts("[I] udut sampoerna");
+      puts("[J] kopi putih");
+      puts("[K] es susu");
+      puts("[L] Rempela ayam");
+      puts("[M] ceker");
+      puts("[N] es jeruk");
+      puts("[M] nasi sambel");
+      puts("[0] tempe goreng");
+      puts("[P] paha");
+      puts("[Q] peyek");
+      puts("[R] gesek");
+      puts("[S] udut bintang samudra");
+      puts("[T] djisamsu");
+      puts("[U] udut dunhill");
+        puts("[V] kepala ayam");
+      puts("[W] air tawar");
+      puts("[X] brutu ayam pedas");
+      puts("[Y] nasi putih");
+      puts("[Z] bakwan");
+      cout<<"Kode barang [A/B/C/D] :"; cin>>brng.kobar;
+      if (brng.kobar=='A'||brng.kobar=='a')
+              {strcpy (brng.nabar, "Nasi Kucing");
+             brng.harga=2000;}
+      else
+      if (brng.kobar=='B'||brng.kobar=='b')
+              {strcpy (brng.nabar, "Mendoan anget");
+             brng.harga=500;}
+      else
+      if (brng.kobar=='C'||brng.kobar=='c')
+              {strcpy (brng.nabar, "Kopi ABC susu");
+              brng.harga=2500;}
+      else
+      if (brng.kobar=='D'||brng.kobar=='d')
+              {strcpy (brng.nabar, "Udut jarum 12");
+              brng.harga=1000;}
+      else
+      if (brng.kobar=='E'||brng.kobar=='e')
+              {strcpy (brng.nabar, "Jahe susu");
+              brng.harga=2000;}
+
+       else
+      if (brng.kobar=='F'||brng.kobar=='f')
+              {strcpy (brng.nabar, "usus ayam");
+              brng.harga=1500;}
+        else
+      if (brng.kobar=='G'||brng.kobar=='g')
+              {strcpy (brng.nabar, "Ndas ayam");
+              brng.harga=3000;}
+      else
+      if (brng.kobar=='H'||brng.kobar=='h')
+              {strcpy (brng.nabar, "kopi hitam");
+              brng.harga=2000;}
+      else
+      if (brng.kobar=='I'||brng.kobar=='i')
+              {strcpy (brng.nabar, "udut sampoerna");
+              brng.harga=2000;}
+      else
+      if (brng.kobar=='J'||brng.kobar=='j')
+              {strcpy (brng.nabar, "Kopi putih");
+              brng.harga=2000;}
+      else
+      if (brng.kobar=='K'||brng.kobar=='k')
+              {strcpy (brng.nabar, "es susu");
+              brng.harga=3000;}
+      else
+      if (brng.kobar=='L'||brng.kobar=='l')
+              {strcpy (brng.nabar, "rempela ayam");
+              brng.harga=3000;}
+      else
+      if (brng.kobar=='M'||brng.kobar=='m')
+              {strcpy (brng.nabar, "ceker");
+              brng.harga=1000;}
+      else
+      if (brng.kobar=='N'||brng.kobar=='n')
+              {strcpy (brng.nabar, "es jeruk");
+              brng.harga=1000;}
+      else
+      if (brng.kobar=='O'||brng.kobar=='0')
+              {strcpy (brng.nabar, "tempe goreng");
+              brng.harga=1000;}
+      else
+      if (brng.kobar=='P'||brng.kobar=='p')
+              {strcpy (brng.nabar, "paha");
+              brng.harga=4000;}
+      else
+      if (brng.kobar=='Q'||brng.kobar=='q')
+              {strcpy (brng.nabar, "peyek");
+              brng.harga=1000;}
+      else
+      if (brng.kobar=='R'||brng.kobar=='r')
+              {strcpy (brng.nabar, "gesek");
+              brng.harga=2000;}
+      else
+      if (brng.kobar=='S'||brng.kobar=='s')
+              {strcpy (brng.nabar, "udut bintang samudra");
+              brng.harga=3000;}
+      else
+      if (brng.kobar=='T'||brng.kobar=='t')
+              {strcpy (brng.nabar, "djisamsu");
+              brng.harga=1000;}
+      else
+      if (brng.kobar=='U'||brng.kobar=='u')
+              {strcpy (brng.nabar, "udut dunhill");
+              brng.harga=1000;}
+      else
+      if (brng.kobar=='V'||brng.kobar=='v')
+              {strcpy (brng.nabar, "kepala ayam");
+              brng.harga=3000;}
+      else
+      if (brng.kobar=='W'||brng.kobar=='w')
+              {strcpy (brng.nabar, "air tawar");
+              brng.harga=1000;}
+      else
+      if (brng.kobar=='X'||brng.kobar=='x')
+              {strcpy (brng.nabar, "brutu ayam pedas");
+              brng.harga=3000;}
+       else
+       if (brng.kobar=='Y'||brng.kobar=='y')
+              {strcpy (brng.nabar, "nasi putih");
+              brng.harga=3000;}
+       else
+              {strcpy (brng.nabar, "bakwan");
+              brng.harga=500;}
+
+   puts("================================================");
+       cout<<"Nama Barang            : "<<brng.nabar<<endl;
+      cout<<"Harga Barang           : Rp. "<<brng.harga<<endl;
+      cout<<"Jumlah Beli            : ";cin>>brng.jumlh;
+       brng.total=brng.harga*brng.jumlh;
+      cout<<"Total bayar            : Rp. "<<brng.total<<endl;
+      cout<<"Jumlah Uang Bayar          : Rp. ";cin>>brng.bayar;
+      cout<<"Tambah makanan      : "<<brng.nabar<<endl;
+      brng.kembali=brng.bayar-brng.total;
+      cout<<"Uang kembali         : Rp. "<<brng.kembali<<endl;
+   puts("===============================================");
+       cout<<"Mau input lagi [Y/T] : ";cin>>ulang;
+      if(ulang=='Y'||ulang=='y')
+       goto satu;
+      else
+       goto awal;
+
+       dua:
+       clrscr();
+       puts("=============================================");
+       puts("*                    DAFTAR BARANG                          ");
+       puts("=============================================");
+       puts("[A] Bata");
+       puts("[B] Nevada");
+       puts("[C] Homyped");
+       puts("[D] Machbeth");
+       cout<<"Kode barang [A/B/C/D] : "; cin>>brng.kobar;
+       if (brng.kobar=='A'||brng.kobar=='a')
+           {strcpy  (brng.nabar, "Bata");
+         brng.harga=100000;}
+       else
+       if (brng.kobar=='B'||brng.kobar=='b')
+           {strcpy    (brng.nabar, "Nevada");
+         brng.harga=100000;}
+         else
+       if (brng.kobar=='C'||brng.kobar=='c')
+           {strcpy    (brng.nabar, "hompyed");
+         brng.harga=150000;}
+       else
+           {strcpy    (brng.nabar, "machbeth");
+         brng.harga=800000;}
+         puts("===============================================");
+             cout<<"Nama Barang : "<<brng.nabar<<endl;
+            cout<<"Harga barang : Rp. "<<brng.harga<<endl;
+            cout<<"Jumlah Beli  : ";cin>>brng.jumlh;
+            brng.total=brng.harga*brng.jumlh;
+            cout<<"Total bayar    : Rp. "<<brng.total<<endl;
+            cout<<"Uang bayar        : Rp. ";cin>>brng.bayar;
+            brng.kembali=brng.bayar-brng.total;
+            cout<<"Uang kembali    : Rp. "<<brng.kembali<<endl;
+         puts("=============================================");
+
+            cout<<"Transaksi lagi [Y/T] : ";cin>>ulang;
+             if (ulang=='Y'||ulang=='y')
+                  goto dua;
+               else
+                goto awal;
+        tiga:
+            clrscr();
+         puts("===============================================");
+         puts("*                   DAFTAR MINUMAN              *");
+          puts("===============================================");
+          puts("[A] Fanta");
+          puts("[B] Es jeruk");
+          puts("[C] Es Teh");
+          puts("[D] Puply orange");
+
+          cout<<"Kode barang[A/B/C/D] : ";cin>>brng.kobar;
+          if (brng.kobar=='A'||brng.kobar=='a')
+          {strcpy (brng.nabar, "Fanta");
+          brng.harga=4000;}
+              else
+          if (brng.kobar=='B'||brng.kobar=='b')
+          {strcpy (brng.nabar, "Es jeruk");
+          brng.harga=6000;}
+            else
+          if (brng.kobar=='C'||brng.kobar=='c')
+          {strcpy (brng.nabar, "Es teh");
+          brng.harga=3000;}
+          else
+          {strcpy(brng.nabar,"Puply orange");
+          brng.harga=8000;}
+
+          puts("===================================================");
+          cout<<"Nama barang  : "<<brng.nabar<<endl;
+          cout<<"Harga barang :Rp.  "<<brng.harga<<endl;
+          cout<<"Jumlah beli  : ";cin>>brng.jumlh;
+          brng.total=brng.harga*brng.jumlh;
+          cout<<"Total Bayar :Rp. "<<brng.total<<endl;
+          cout<<"Uang Bayar  :Rp. ";cin>>brng.bayar;
+          brng.kembali=brng.bayar-brng.total;
+          cout<<"Uang kembali : Rp. "<<brng.kembali<<endl;
+          puts("===================================================");
+          cout<<"Mau input lagy [Y/T] :";cin>>ulang;
+          if (ulang=='Y'||ulang=='y')
+          goto tiga;
+          else
+          goto awal;
+
+          empat:
+          cout<<endl;
+          cout<<"****TERIMA KASIH****";
+getch();
+return 0;
+}
